@@ -6,10 +6,6 @@ from carbonnow import __version__
 with open('README.md') as fh:
     long_description = fh.read()
 
-with open('requirements.txt') as f:
-    dependencies = [_.strip() for _ in f]
-
-
 setuptools.setup(
     name='carbonnow',
     version=__version__,
@@ -25,6 +21,6 @@ setuptools.setup(
         'Development Status :: 3 - Alpha',
         'Programming Language :: Python :: 3.8',
     ],
-    install_requires=dependencies,
+    install_requires=['aiohttp==3.7.3', 'asyncio==3.4.3'],
     python_requires='>=3.6',
 )
