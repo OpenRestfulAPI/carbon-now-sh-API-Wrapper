@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 import setuptools
 
-from carbonnow import __version__
 
 with open('README.md') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name='carbonnow',
-    version=__version__,
+    version="0.0.2.1",
     description='carbon.now.sh API Wrapper powered by Carbonara',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -21,6 +20,6 @@ setuptools.setup(
         'Development Status :: 3 - Alpha',
         'Programming Language :: Python :: 3.8',
     ],
-    install_requires=['aiohttp==3.7.3', 'asyncio==3.4.3'],
+    install_requires=['aiohttp==3.7.4.post0', 'asyncio'],
     python_requires='>=3.6',
 )
