@@ -23,7 +23,7 @@ make install
 
 ### 📖 Example Usage:
 
-```
+```py
 import asyncio
 
 from carbonnow import Carbon
